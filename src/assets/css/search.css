@@ -742,7 +742,7 @@ html {
   }
 }
 table {
-  width: 100% !important;
+  width: 95% !important;
   align-items: start;
   border: inherit;
   border-collapse: collapse;
@@ -792,7 +792,7 @@ table tbody tr td .btn-primary {
 }
 .modal .modal-content {
   width: 50%;
-  height: 85%;
+  height: 95%;
   background-color: #fff;
   border-radius: 10px;
   padding: 3%;
@@ -821,7 +821,7 @@ table tbody tr td .btn-primary {
   width: 100%;
   margin-top: 3%;
 }
-.modal .modal-content form input {
+.modal .modal-content form input, .modal .modal-content form select {
   width: 100%;
   height: 50px;
   margin-bottom: 20px;

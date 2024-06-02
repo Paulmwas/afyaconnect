@@ -39,8 +39,11 @@ export default function Register() {
       console.log("Success!", response.data);
       setSuccessMessage("Registration Successful!");
       localStorage.setItem("userName", formData.email);
+      localStorage.setItem("accessToken", response.data.tokens.access);
+      localStorage.setItem("refreshToken", response.data.tokens.refresh);
 
-      navigate("/dashboard");  // Redirect to the dashboard
+
+      navigate("/pharmacist/tests?add");  // Redirect to the dashboard
     } catch (error) {
       console.log("Error during registration!", error.response?.data);
       if (error.response && error.response.data) {
